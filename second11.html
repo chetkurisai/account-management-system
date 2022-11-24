@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Management System</title>
+    <link rel="stylesheet" href="second11.css">
+</head>
+<body>
+    <div class="div1">
+        <a class="a1">Account Management System</a>
+    </div>
+    <div class="div3">
+        <input id="i1" type="text" name="name" placeholder="Customer Name" required>
+        <input id="i2" type="text" name="number" placeholder="Customer number" required>
+        <li>
+            <label>Gender</label>
+            <select name="select" id="">
+                <option value=""></option>
+                <option value="anv ">male</option>
+                <option value="">female</option>
+           </select>
+        </li>
+        <input id="i4" type="number" name="Age" placeholder="Age" required>
+        <input id="i5" type="email" name="Email" placeholder="Email" required>
+        <input id="i6" type="date" name="Date" placeholder="Date" required>
+            <li>
+                <label>Account type</label>
+                <select name="languages" id="">
+                    <option value=""></option>
+                    <option value="">Savings Account</option>
+
+                    <option value="">Current Account</option>
+                    <option value="">Other Account</option>
+               </select>
+            </li>
+            <a id="aa" href="#"><button id="a1" onclick="check()">submit</button></a>
+            <a href="#"><button id="a2">reset</button></a>
+
+    </div><br><br><br><br><br>
+    <div class="div2">
+        <a href=""><button id="b1">Create Account</button></a>
+        <a href="third11.html"><button id="b2">Delete Account</button></a>
+        <a href="four11.html"><button id="b3">Update Account</button></a>
+        <a href="#"><button id="b4">Get All Account Details</button></a>
+        <a href="six11.html"><button id="b5">Get single Account Details</button></a>
+        <a href="seven11.html"><button id="b6">Deposite Amount</button></a>
+        <a href="eight11.html"><button id="b7">Withdraw Amount</button></a>
+        <a href="nine11.html"><button id="b8">Transfer Funds</button></a>
+        <a href="ten11.html"><button id="b9">Statement</button></a>
+    </div>
+    <script>
+        function ok(){
+            var s=document.getElementsByTagName("input");
+            for(var i=0;i<6;i++){
+                if(s[i].value==""){
+                    return false;
+                }
+            }
+            return true;
+        }
+        function check(){
+            if(ok()){
+                document.getElementById("aa").href="submit1.html";
+            }
+            else{
+                alert("please fill all the details..")
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

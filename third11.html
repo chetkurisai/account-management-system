@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Management System</title>
+    <link rel="stylesheet" href="third11.css">
+</head>
+<body>
+    <div class="div1">
+        <a class="a1">Account Management System</a>
+    </div>
+    <div class="div3">
+        <input id="i1" type="text" name="number" placeholder="Enter Delete Account number" required>
+        <a id="aa" href="#"><button id="a1" onclick="check()">submit</button></a>
+        <a href="#"><button id="a2">reset</button></a>
+    </div><br><br><br><br><br>
+    
+    <div class="div2">
+        <a href="second11.html"><button id="b1">Create Account</button></a>
+        <a href="#"><button id="b2">Delete Account</button></a>
+        <a href="four11.html"><button id="b3">Update Account</button></a>
+        <a href="#"><button id="b4">Get All Account Details</button></a>
+        <a href="six11.html"><button id="b5">Get single Account Details</button></a>
+        <a href="seven11.html"><button id="b6">Deposite Amount</button></a>
+        <a href="eight11.html"><button id="b7">Withdraw Amount</button></a>
+        <a href="nine11.html"><button id="b8">Transfer Funds</button></a>
+        <a href="ten11.html"><button id="b9">Statement</button></a>
+
+    </div>
+    <script>
+        function ok(){
+            var s=document.getElementById("i1");
+                if (s.value=="") {
+                    return false
+                    
+                }
+                else{
+                    return true
+                }
+        }
+        function check(){
+            if(ok()){
+                document.getElementById("aa").href="submit2.html";
+    
+            }
+            else{
+                alert("please fill account number correctly")
+            }
+
+    }
+    </script>
+</body>
+</html>
